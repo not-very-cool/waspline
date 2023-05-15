@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width">
     <title>Fast Facts Practice Test</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image" href="wasp.jpg">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pluralize/8.0.0/pluralize.min.js"></script>
 </head>
 <body>
-
     <script type=module src=grid.js></script>
+    <a href=index.html>Home</a>
+    <p>If anything is broken, please tell me :P</p>
     <form id=sheet>
         <table>
             <tr id=row0>
@@ -37,11 +40,18 @@
                 <th id=ltr5></th>
             </tr>
         </table>
+        <br>
         <input class=shown id=submit type=button value=Submit>
+        <input class=hidden id=showbutton type=button value="Show Correct Answers">
         <input class=hidden id=nextbutton type=button value=Next>
+        <h2 class=hidden id=score></h2>
+        <!--<p>vv doesnt work, maybe ill add this later vv</p>
+        <input id=copyseed type=button value="Copy seed"></input>
+        <br><br>
+        <input id=seed style="width: 25%; display:inline">
+        <input id=go type=button value="Load grid from seed"></input>-->
     </form>
-    <div id=debug></div>
-    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" class=badge theme="dark" position="bottom-right"></script>
 </body>
 
 </html>

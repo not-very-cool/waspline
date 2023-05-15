@@ -1,6 +1,96 @@
 html {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+body, input {
+    background-color: #202020;
+    color: white;
+}
+
+a {
+    color: white;
+    font-size: large;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-size: x-large;
+}
+
+grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.stick {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bg {
+    padding-top: 0;
+    background-color: #202020;
+}
+
+.table {
+    display: table;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.tablecell {
+    display: table-cell;
+}
+
+.alignright {
+    float: right;
+}
+
+.top {
+    z-index: 1;
+}
+
+.margintop {
+    margin-top: 1%;
+}
+
+.center {
+    position: relative;
+    top: 6px;
+}
+
+input:not(.hidden):not([type]) {
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    border: 2px solid white;
+    width: 95%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input.thin {
+    width: 25%;
+}
+
+input[type="button"] {
+    cursor: pointer;
+    font-size: x-large;
+    border: 2px solid white
 }
 
 input.correct {
@@ -9,6 +99,35 @@ input.correct {
 
 input.incorrect {
     background-color: red;
+}
+
+.smallfont {
+    font-size: medium !important;
+}
+
+:focus {
+    outline: 2px solid orange;
+}
+
+input:not(.hidden):focus {
+    border: 2px solid orange;
+    outline:none;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #555; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #aaa; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc; 
 }
 
 .hidden {

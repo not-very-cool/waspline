@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fast Facts Memorize Terms</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image" href="wasp.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pluralize/8.0.0/pluralize.min.js"></script>
+    <script src="confetti.js"></script>
+</head>
+
+<body>
+    <script type="module" src="study.js"></script>
+    <a href="index.html">Home</a>
+    <h1>Fast facts memorization helper</h1>
+    <p>If anything is broken, please tell me :P</p>
+    <grid id="grid"></grid>
+    <input id="rand" class="margintop" type="button" value="Random Category" onclick=studyrand()>
+    <div id="quiz" class="hidden">
+        <div class="stick bg">
+            <div class="table">
+                <h1 id="subject" class="tablecell"></h1>
+                <h2 id="timer" class="tablecell"></h2>
+                <div class="alignright tablecell center">
+                    <input id="goback" type="button" value="Go Back" onclick=goback()>
+                    <input id="giveup" type="button" value="Give Up" onclick=giveup()>
+                    <input id="restart" class="hidden" type="button" value="Restart" onclick=restart()>
+                </div>
+            </div>
+            <input id="input" onkeydown="if (event.key == 'Enter') {guess(value, this)}" autocomplete=off>
+        </div>
+        <table id="table"></table>
+        <!--<div class="margintop">
+            <input id=goback type=button value="Go Back" onclick=goback()>
+            <input id=giveup type=button value="Give Up" onclick=giveup()>
+            <input id=restart class=hidden type=button value="Restart" onclick=restart()>
+        </div>-->
+    </div>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" class=badge theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
