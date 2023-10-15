@@ -1,4 +1,4 @@
-import words from 'https://replit.com/@EmojiGame/LimegreenSaneDehardwarization#words.json' assert {type: 'json'};
+import words from './words.json' assert {type: 'json'};
 let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
 let allsubjects = Object.keys(words);
 let corrects;
